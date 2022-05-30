@@ -17,7 +17,8 @@
     <style name="Theme.Yttong.Fullscreen" parent="Theme.Yttong">
         <item name="android:actionBarStyle">@style/Widget.Theme.Yttong.ActionBar.Fullscreen</item>
         <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowBackground">@null</item>
+        <!--   启动时防止白屏或者黑屏     -->
+        <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
     <style name="ThemeOverlay.Yttong.FullscreenContainer" parent="">
