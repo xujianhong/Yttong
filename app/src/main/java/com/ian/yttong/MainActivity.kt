@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 //                    needCheckMd5 = true
                 isShowNotification = true
                 alwaysShowDownLoadDialog = true
-                notifyImgRes = R.mipmap.ic_launcher
+                notifyImgRes = R.mipmap.logo
 //                    apkSavePath = Environment.getExternalStorageDirectory().absolutePath +"/teprinciple"
 //                    apkSaveName = "teprinciple"
             }
