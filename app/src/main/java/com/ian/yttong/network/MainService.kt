@@ -18,7 +18,8 @@ import java.util.concurrent.TimeUnit
  * Description
  * Created by jianhongxu on 2022/5/16
  */
-private const val BASE_URL = "http://test.4hand.com.cn/yttong/"
+//private const val BASE_URL = "http://test.4hand.com.cn/yttong/"
+private const val BASE_URL = "http://talentgame.4hand.com.cn/yttong/"
 const val key="1a8af1bcf37e4e97b857e6101cc68717"
 
 private val moshi = Moshi.Builder()

@@ -11,6 +11,7 @@ import coil.load
 import com.ian.yttong.adapter.MainListAdapter
 import com.ian.yttong.databinding.MainFragmentBinding
 import com.ian.yttong.network.entity.BannerList
+import com.ian.yttong.util.PhoneUtil
 import com.ian.yttong.viewmodel.MainViewModel
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.holder.BannerImageHolder

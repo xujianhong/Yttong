@@ -84,6 +84,8 @@ class WebActivity : AppCompatActivity() {
                     val cookieManager = CookieManager.getInstance()
                     val s = cookieManager.getCookie(url)
                     Log.d(TAG, "Cookies==$s")
+                    url?.let {   Log.d(TAG,it) }
+
                     dataBinding.pbLoad.visibility = View.VISIBLE
                 }
             }
@@ -91,6 +93,15 @@ class WebActivity : AppCompatActivity() {
                 override fun onProgressChanged(view: WebView?, newProgress: Int) {
                     super.onProgressChanged(view, newProgress)
                     dataBinding.pbLoad.progress = newProgress
+                }
+
+                override fun onReceivedTitle(view: WebView?, title: String?) {
+                    super.onReceivedTitle(view, title)
+                    if(!title.isNullOrEmpty()){
+                        supportActionBar?.let {
+                            it.title = title
+                        }
+                    }
                 }
 
                 //处理alert弹出框，html 弹框的一种方式

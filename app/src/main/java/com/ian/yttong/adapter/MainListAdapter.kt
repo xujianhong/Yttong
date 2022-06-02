@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ian.yttong.WebActivity
 import com.ian.yttong.databinding.ItemMainListBinding
 import com.ian.yttong.network.entity.GradeList
+import com.ian.yttong.util.PhoneUtil
 
 /**
  * Description
@@ -47,7 +48,7 @@ class MainListAdapter : ListAdapter<GradeList, MainListAdapter.MainListViewHolde
                     WebActivity::class.java
                 )
                     .putExtra(WebActivity.TITLE_EXTRA, gradeList.gradedNamae)
-                    .putExtra(WebActivity.URL_EXTRA, gradeList.url)
+                    .putExtra(WebActivity.URL_EXTRA, gradeList.url+"?deviceNo="+ PhoneUtil.getUniqueID(holder.binding.root.context))
             )
         }
         holder.binding(gradeList)
