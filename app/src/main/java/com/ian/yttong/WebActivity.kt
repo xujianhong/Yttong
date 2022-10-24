@@ -156,10 +156,10 @@ class WebActivity : AppCompatActivity() {
     //设置回退
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if (dataBinding.wvWeb.canGoBack()) {
-                dataBinding.wvWeb.goBack()
-                return true
-            }
+//            if (dataBinding.wvWeb.canGoBack()) {
+//                dataBinding.wvWeb.goBack()
+//                return true
+//            }
         }
         return super.onKeyDown(keyCode, event)
     }
@@ -183,11 +183,11 @@ class WebActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {//toolbar 返回键点击事件
-                if (dataBinding.wvWeb.canGoBack()) {
-                    dataBinding.wvWeb.goBack()
-                } else {
+//                if (dataBinding.wvWeb.canGoBack()) {
+//                    dataBinding.wvWeb.goBack()
+//                } else {
                     finish()
-                }
+//                }
             }
         }
         return true
